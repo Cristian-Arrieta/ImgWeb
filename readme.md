@@ -8,12 +8,12 @@
 </p>
 
 ## LVART
-es una plataforma dirigida a ilustradores y dibujantes que permite a los usuarios crear y administrar colecciones de imágenes como eventos, intereses, aficiones y mucho más.
+Es una plataforma dirigida a ilustradores y dibujantes que permite a los usuarios crear y administrar colecciones de imágenes como eventos, intereses, aficiones y mucho más.
 
 ## Tecnologias Utlizadas
-Lenguaje de programación : php , JavaScript (Jquery, Ajax) , css (Bootstrap).
-Framework : Laravel 5.7
-Database : MySQL
+- [Lenguaje de programación : php , JavaScript (Jquery, Ajax) , css (Bootstrap)].
+- [Framework .(: Laravel 5.7)]
+- [Database : MySQL]
 
 
 
