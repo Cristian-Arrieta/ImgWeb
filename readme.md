@@ -7,6 +7,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## LVART
+es una plataforma dirigida a ilustradores y dibujantes que permite a los usuarios crear y administrar colecciones de imágenes como eventos, intereses, aficiones y mucho más.
+
+## Tecnologias Utlizadas
+Lenguaje de programación : php , JavaScript (Jquery, Ajax) , css (Bootstrap).
+Framework : Laravel 5.7
+Database : MySQL
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
