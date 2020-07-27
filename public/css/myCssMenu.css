@@ -91,3 +91,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.big_word
+{
+  font-size:25px;
+}
+
+.norm_word
+{
+  font-size:15px;
+}

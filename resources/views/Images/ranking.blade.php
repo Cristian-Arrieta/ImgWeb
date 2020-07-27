@@ -15,7 +15,7 @@
 
 			<div class="card">
 
-				<div class="card-header"> <center><h4>Popularity Ranking</h4></center> </div>
+				<div class="card-header"> <center><h4 style="font-size:25px;"  class="badge badge-pill badge-dark">Popularity Ranking</h4></center> </div>
 
 				<div class="card-body">
 					
