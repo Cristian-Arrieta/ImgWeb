@@ -14,7 +14,7 @@
 
 			<div class="card">
 
-				<div class="card-header"> <center><h4>Followings</h4></center> </div>
+				<div class="card-header"> <center><h4 style="font-size:25px;"  class="badge badge-pill badge-dark">Followings</h4></center> </div>
 
 				<div class="card-body">
 					
@@ -27,8 +27,8 @@
 								
 								<h5 class="m-0">
 								<a href="{{ route('users.show', $user->id) }}">
-								<img src="{{$user->getPhotoRouteAttribute()}}" class="w-100 mb-1">
-								<strong>{{ $user->name }}</strong></a></h5>
+								<img src="{{$user->getPhotoRouteAttribute()}}" class="rounded w-100 mb-1">
+								<strong class="badge badge-pill badge-primary norm_word">{{ $user->name }}</strong></a></h5>
 								
 							</div>
 						
