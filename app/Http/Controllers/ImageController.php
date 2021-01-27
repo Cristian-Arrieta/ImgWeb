@@ -35,7 +35,7 @@ class ImageController extends Controller
      */
     public function create()
     {
-		return view ('images.create',compact('tags'));
+		return view ('images.create');
     }
 
     /**

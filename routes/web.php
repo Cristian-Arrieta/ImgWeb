@@ -50,7 +50,7 @@ Route::get('users/filtro','UserController@filtro')->name('users.filtro');
  
 Route::get('users/{user}','UserController@show')->name('users.show');
 
-
+Route::get('images/{image}/download', 'ImageController@download')->name('images.download');
 			
 Route::get('users','UserController@index')->name('users.index');
 
@@ -89,7 +89,7 @@ Route::middleware(['auth'])->group(function()
  
 	Route::post('images/favorite', 'ImageController@favorite')->name('images.favorite');
 		
-	Route::get('images/{image}/download', 'ImageController@download')->name('images.download');
+
 	
 	Route::delete('images/{image}','ImageController@destroy')->name('images.destroy');
 	
