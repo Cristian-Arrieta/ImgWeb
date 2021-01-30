@@ -191,6 +191,11 @@ class UserController extends Controller
 				->where('data','LIKE','{"user_id":'.$user->id.',%')
                 ->delete();	
 			
+			$comm = $user->comments;
+			
+			foreach($comm as $c){
+				$c->delete();
+			}
 			
 			$user->delete();
 			return redirect()->route('users.index')->with('info','Successfully Deleted');}
