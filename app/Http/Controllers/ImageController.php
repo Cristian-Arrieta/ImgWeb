@@ -241,7 +241,7 @@ class ImageController extends Controller
      */
     public function edit(Image $image)
     {
-		if ( Auth::user()->can('users.edit') || ( Auth::user()->id == $image->users->id))
+		if ( Auth::user()->can('images.edit') || ( Auth::user()->id == $image->users->id))
 		{
 			$tags = array();
 			if($image->tags != null)
@@ -263,7 +263,7 @@ class ImageController extends Controller
      */
     public function update(Request $request,Image $image)
     {
-		if ( Auth::user()->can('users.edit') || ( Auth::user()->id == $image->users->id))
+		if ( Auth::user()->can('images.edit') || ( Auth::user()->id == $image->users->id))
 		{
 			$data = request()->validate(['name' => 'required',
 			'description' => '',
