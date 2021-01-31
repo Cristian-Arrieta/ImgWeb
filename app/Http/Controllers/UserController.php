@@ -176,6 +176,7 @@ class UserController extends Controller
 			{
 				DB::table('followables')
                 ->where('followable_id', $image->id)
+				->where('followable_type','=','App\Image')
                 ->update(['deleted_at' => new \DateTime(),'updated_at' => new \DateTime()]);
 				
 				$image->delete();
@@ -183,6 +184,7 @@ class UserController extends Controller
 			
 			DB::table('followables')
                 ->where('followable_id', $user->id)
+				->where('followable_type','=','App\User')
 				->orwhere('user_id',$user->id)
                 ->update(['deleted_at' => new \DateTime(),'updated_at' => new \DateTime()]);
 			
