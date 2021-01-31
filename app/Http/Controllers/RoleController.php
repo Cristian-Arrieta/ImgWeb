@@ -53,9 +53,21 @@ class RoleController extends Controller
 			foreach($request->get('permissions') as $r)
 			{
 				$perm[] = $r; 
-				if ($r == (4 || 5 ||6))
-				{
-					$perm[] = 3;
+				switch ($r){
+					case(4):
+						$perm[] = "3";
+						break;
+					
+					case(5):
+						$perm[] = "3";
+						break;
+					
+					case(6):
+						$perm[] = "3";
+						break;
+					
+					default:
+						break;	
 				}
 				
 			}
@@ -121,9 +133,22 @@ class RoleController extends Controller
 			foreach($request->get('permissions') as $r)
 			{
 				$perm[] = $r; 
-				if ($r == (4 || 5 ||6))
-				{
-					$perm[] = "3";
+				
+				switch ($r){
+					case(4):
+						$perm[] = "3";
+						break;
+					
+					case(5):
+						$perm[] = "3";
+						break;
+					
+					case(6):
+						$perm[] = "3";
+						break;
+					
+					default:
+						break;					
 				}
 				
 			}
