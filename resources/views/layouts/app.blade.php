@@ -11,46 +11,40 @@
 
     <!-- Scripts -->
 
-<script src="{{ asset('js/app.js') }}" defer></script> 
-	
+	<script src="{{ asset('js/app.js') }}" defer></script> 
+		
 
- @section('miScript')
-    <!--  Scripts  
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	-->
-	<script src="{{ asset('js/jquery-3.3.1.slim.min.js') }}" ></script> 
-  @show
+	 @section('miScript')
+		<script src="{{ asset('js/jquery-3.3.1.slim.min.js') }}" ></script> 
+	  @show
+	  
+	  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
-
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-  <!--	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" ></script>
-   CUIDADO era el ultimo script antes--> 
-
-<script src="{{ asset('js/miScriptMenu.js') }}" ></script> 
-<script src="{{ asset('js/reload.js') }}" ></script>
-<script src="{{ asset('js/noti_read.js') }}" ></script> 
+	<!--  My javascript  -->
+	<script src="{{ asset('js/miScriptMenu.js') }}" ></script> 
+	<script src="{{ asset('js/reload.js') }}" ></script>
+	<script src="{{ asset('js/noti_read.js') }}" ></script> 
 
 
-<!--  Quitar en caso de fallas (Galleria)  -->
-<style type="text/css">
-    @media (min-width: 768px) {
-    .carousel-multi-item-2 .col-md-3 {
-    float: left;
-    width: 25%;
-    max-width: 100%; } }
-    
-    .carousel-multi-item-2 .card img {
-    border-radius: 2px; }
-	
-		.columnas{flex:0 0 16.6666666667%;max-width:16.6666666667%}
-	
-	@media only screen and (max-width: 950px)
-	{
-		.columnas{flex:0 0 25%;max-width:25%}
-	}
-    </style>	
+	<!--  Quitar en caso de fallas (Galleria)  -->
+	<style type="text/css">
+		@media (min-width: 768px) {
+		.carousel-multi-item-2 .col-md-3 {
+		float: left;
+		width: 25%;
+		max-width: 100%; } }
+		
+		.carousel-multi-item-2 .card img {
+		border-radius: 2px; }
+		
+			.columnas{flex:0 0 16.6666666667%;max-width:16.6666666667%}
+		
+		@media only screen and (max-width: 950px)
+		{
+			.columnas{flex:0 0 25%;max-width:25%}
+		}
+	</style>	
     
     
     <!-- Fonts 
@@ -107,18 +101,17 @@
             }
     </style>
     
-
-    <!-- Styles 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	-->
-     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+	<!--Bootstrap-->
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 	 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css" integrity="sha256-CNwnGWPO03a1kOlAsGaH5g8P3dFaqFqqGFV/1nkX5OU=" crossorigin="anonymous" />
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	
+	<!--CSS Menu-->
 	<link href="{{ asset('css/MyCssMenu.css') }}" rel="stylesheet">
 	
+	<!--Favicons-->
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/icono/apple-touch-icon.png') }}">
 	<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/icono/favicon-32x32.png') }}">
 	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/icono/favicon-16x16.png') }}">
@@ -290,6 +283,7 @@
             </div>
         </nav>
 		<main class="py-1" style="background-color:black;"></main>
+		<!-- Info , Alert and Warning Message -->
 		<main class="py-4 " >
 				@if(session('info'))
 					<div class="container">
