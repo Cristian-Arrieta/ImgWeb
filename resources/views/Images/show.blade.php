@@ -13,10 +13,16 @@
 @section('content')
 
 <!--JavaScript-->
+
+<!--custom.js ajax envia los datos "Follow" al Controlador -->
 <script src="{{ asset('js/custom.js') }}" ></script>
+<!--likes.js ajax envia los datos "Notifiable Type Like" al Controlador -->
 <script src="{{ asset('js/likes.js') }}" ></script>
+<!--favorites.js ajax envia los datos "Notifiable Type Favorites" al Controlador-->
 <script src="{{ asset('js/favorites.js') }}" ></script>
+<!--comment.js ajax envia los datos "comment" al Controlador-->
 <script src="{{ asset('js/comment.js') }}" ></script>
+<!--seeMore.js funcion que muestra mas comentarios en el post-->
 <script src="{{ asset('js/seeMore.js') }}"></script>
 
 <div class="container">
@@ -251,9 +257,6 @@
 						<div class="col-md-10">
 							<td style="width:100%">
 							
-							
-								
-								
 									<div class="form-group">
 										
 										<textarea id="imgcomm"rows="5" name="comment" class="form-control"></textarea>
@@ -266,9 +269,6 @@
 										class="btn btn-primary" >Post comment</button>															
 									</div>
 									
-								
-							
-							
 							</td>
 						</div>
 						</tr>
