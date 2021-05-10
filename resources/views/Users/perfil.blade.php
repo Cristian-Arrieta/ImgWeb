@@ -59,12 +59,5 @@ window.addEventListener('load', init, false);
 
     <!-- Jquery -->
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- Datepicker Files -->
-    <link rel="stylesheet" href="{{asset('datePicker/css/bootstrap-datepicker3.css')}}">
-    <link rel="stylesheet" href="{{asset('datePicker/css/bootstrap-standalone.css')}}">
-    <script src="{{asset('datePicker/js/bootstrap-datepicker.js')}}"></script>
-    <!-- Languaje -->
-    <script src="{{asset('datePicker/locales/bootstrap-datepicker.es.min.js')}}"></script>
- <script src="{{ asset('js/miScript.js') }}" ></script>
 @endsection
 

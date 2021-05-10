@@ -45,6 +45,8 @@
 <p class="text-muted">Upload a photo for your profile</p></center>
 
 </div>
+
+<!-- Muestra el nombre del archivo -->
 <script>
   function Nombre(){
 		

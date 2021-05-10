@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
-
+<!--CSS-->
 <link href="{{ asset('css/myCss.css') }}" rel="stylesheet">
 
-<script src="{{ asset('js/tags.js') }}" ></script>
+<!--JavaScript-->
 
+<script src="{{ asset('js/tags.js') }}" ></script>
 <script src="{{ asset('js/image.js') }}" ></script>
 
 

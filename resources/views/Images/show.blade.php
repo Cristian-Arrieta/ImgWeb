@@ -12,12 +12,13 @@
 
 @section('content')
 
-
+<!--JavaScript-->
 <script src="{{ asset('js/custom.js') }}" ></script>
 <script src="{{ asset('js/likes.js') }}" ></script>
 <script src="{{ asset('js/favorites.js') }}" ></script>
 <script src="{{ asset('js/comment.js') }}" ></script>
 <script src="{{ asset('js/seeMore.js') }}"></script>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">

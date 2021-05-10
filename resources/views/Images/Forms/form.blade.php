@@ -28,6 +28,7 @@
 		<p class="text-muted">*png , jpg , jpeg ,gif</p></center>
 </div>
 
+<!-- Muestra el nombre del archivo -->
 <script>
   function Nombre(){
 		
