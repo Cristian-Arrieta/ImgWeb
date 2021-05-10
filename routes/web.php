@@ -27,26 +27,13 @@ Route::get('/images/read','ImageController@read')->name('read');
 
 Route::get('filtro','HomeController@filtro')->name('filtro');
 
-//Route::get('userss', 'UserController@users')->name('users');
-
-/*
-Route::get('users/perfil/{user}','UserController@perfil')->name('users.perfil');
-Route::put('users/perfil/{user}','UserController@perfil_update')->name('users.perfil_update');
-*/
-
-// Route::get('user/{id}', 'HomeController@user')->name('user.view');
-
 Route::post('ajaxRequest', 'UserController@ajaxRequest')->name('ajaxRequest');
-
-//Route::post('images/ajaxRequest', 'UserController@ajaxRequest')->name('ajaxRequest');
 
 Route::post('images/ajaxRequest', 'UserController@ajaxRequest')->name('ajaxRequest'); 
  
 Route::post('users/ajaxRequest', 'UserController@ajaxRequest')->name('ajaxRequest');
  
 Route::get('users/filtro','UserController@filtro')->name('users.filtro'); 
- 
-//Cuidado con la siguiente ruta provoca errores
  
 Route::get('users/{user}','UserController@show')->name('users.show');
 
@@ -58,9 +45,7 @@ Route::get('images/ranking', 'ImageController@ranking')->name('images.ranking');
 
 Route::middleware(['auth'])->group(function()
 {
-	
-	
-
+		
 	Route::get('users/edit/{user}','UserController@edit')->name('users.edit');
 					
 	Route::put('users/{user}','UserController@update')->name('users.update');	
@@ -74,8 +59,7 @@ Route::middleware(['auth'])->group(function()
 	Route::get('followers/filtro','UserController@filtro_fol')->name('followers.filtro'); 
 	
 	Route::get('followings/filtro','UserController@filtro_following')->name('followings.filtro'); 
-	
-	
+		
 			
 	Route::get('images/create','ImageController@create')->name('images.create');
 	
@@ -97,29 +81,7 @@ Route::middleware(['auth'])->group(function()
 	
 	Route::get('favorites/filtro','ImageController@favorites_filtro')->name('favorites.filtro'); 
 	
-	/*
-	Route::get('tags/index','TagController@index')->name('tags.index')
-		->middleware('permission:users.show');
 	
-	Route::get('tags/create','TagController@create')->name('tags.create')
-		->middleware('permission:users.show');
-		
-	Route::get('tags/{tag}/edit','TagController@edit')->name('tags.edit')
-		->middleware('permission:users.show');							
-	
-	Route::get('tags/{tag}','TagController@show')->name('tags.show')
-		->middleware('permission:users.show');
-			
-	Route::post('tags/store','TagController@store')->name('tags.store')
-			->middleware('permission:users.show');	
-	
-	Route::put('tags/{tag}/update','TagController@update')->name('tags.update')
-			->middleware('permission:users.show');	
-				
-	Route::delete('tags/{tag}','TagController@destroy')->name('tags.destroy')
-			->middleware('permission:users.destroy');	
-
-	*/
 	// --------------------------------------	Roles	------------------------------------------------
 			
 			
@@ -150,7 +112,6 @@ Route::middleware(['auth'])->group(function()
 			->middleware('permission:roles.destroy');			
 			
 	
-		
 	// --------------------------------------	Comments	------------------------------------------------
 			
 	Route::post('images/comment','CommentController@store')->name('comments.store');
@@ -162,19 +123,6 @@ Route::middleware(['auth'])->group(function()
 
 Route::get('images/{image}','ImageController@show')->name('images.show');
 
- /*
-Route::group(['middleware' => 'auth'], function () {
-    Route::resource('posts', 'PostController');
- 
-    Route::get('posts/{post}/like', 'PostController@like')->name('posts.like');
-    Route::get('posts/{post}/unlike', 'PostController@unlike')->name('posts.unlike');
-
-    Route::get('posts/{post}/dislike', 'PostController@dislike')->name('posts.dislike');
-    Route::get('posts/{post}/undislike', 'PostController@undislike')->name('posts.undislike');
-});
-
-
-*/
 
 
 
