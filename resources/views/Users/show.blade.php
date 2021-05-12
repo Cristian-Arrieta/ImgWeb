@@ -13,7 +13,7 @@
 @section('content')
 
 <script src="{{ asset('js/custom.js') }}" ></script>
-<script src="{{ asset('js/gall.js') }}" ></script>
+<script src="{{ asset('js/gallery.js') }}" ></script>
 
 <div class="container">
 
